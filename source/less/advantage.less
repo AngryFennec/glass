@@ -43,7 +43,7 @@
 
 .advantage__header {
   margin-bottom: 10px;
-  padding-right: 80px;
+  padding-right: 60px;
   margin-top: 20px;
 }
 
@@ -63,40 +63,30 @@
   }
 
   .advantage__item {
-    width: 195px;
+    width: 220px;
     line-height: 23px;
     padding-right: 0;
     margin-right: 30px;
-    margin-bottom: 0;
-    &:nth-child(2) {
-      order: 4;
-      width: 210px;
-      margin-right: 15px;
-    }
-
-    &:nth-child(3) {
-      order: 2;
-      width: 240px;
-      margin-bottom: 16px;
-    }
-
-    &:nth-child(4) {
+    margin-bottom: 20px;
+    &:nth-child(5){
+      width: 320px;
+      margin-left: 20px;
       order: 3;
-      width: 220px;
       margin-right: 0;
-      margin-left: 12px;
-      margin-bottom: 16px;
     }
-
-    &:nth-child(5) {
-      order: 5;
+    &:nth-child(4){
+      order: -1;
     }
-
-    &:nth-child(6) {
-      order: 6;
-      width: 220px;
+    &:nth-child(3){
+      width: 350px;
+      order: 2;
+    }
+    &:nth-child(2){
       margin-right: 0;
-      margin-left: 57px;
+      order: 1;
+    }
+    &:nth-child(1){
+      order: 0;
     }
   }
 
@@ -110,15 +100,15 @@
 @media (min-width:1200px) {
   .advantage {
     width: 1200px;
-
+    padding-bottom: 0;
     background: transparent;
   }
 
   .advantage__wrapper {
     width: 1920px;
-    background: url("../images/car-desktop.svg") no-repeat 81px 184px,
-    url("../images/advantage-back2.svg") no-repeat 101% 88%,
-    url("../images/advantage-back1.svg") no-repeat 100% 292px,
+    background: url("../images/car-desktop.svg") no-repeat 81px 204px,
+    url("../images/advantage-back2.svg") no-repeat 100% 220px,
+    url("../images/advantage-back1.svg") no-repeat 97.6% 240px,
     url("../images/advantage-back-desktop.svg") no-repeat 0 -255px;
 
     height: 100%;
@@ -146,45 +136,40 @@
 
     &:nth-child(1) {
       order: 1;
-      width: 210px;
-      margin-left: 170px;
-      margin-top: 15px;
+      width: 220px;
+      margin-left: 73px;
+      margin-top: -19px;
     }
 
     &:nth-child(2) {
       order: 2;
-      width: 310px;
-      margin-left: 350px;
-      margin-top: 20px;
+      width: 300px;
+      margin-left: 292px;
+      margin-top: 8px;
     }
 
     &:nth-child(3) {
       order: 3;
-      width: 260px;
-      margin-left: 440px;
-      margin-top: 58px;
+      width: 290px;
+      margin-left: 424px;
+      margin-top: 40px;
     }
 
     &:nth-child(4) {
       order: 4;
       width: 280px;
 
-      margin-left: 472px;
-      margin-top: 28px;
+      margin-left: 445px;
+      margin-top: 33px;
     }
 
     &:nth-child(5) {
-      width: 250px;
+      width: 290px;
       order: 5;
-      margin-left: 362px;
-      margin-top: 12px;
+      margin-left: 419px;
+      margin-top: 35px;
     }
 
-    &:nth-child(6) {
-      order: 6;
-      width: 320px;
-      margin-top: -60px;
-      margin-left: 0;
-    }
+
   }
 }
