@@ -1,6 +1,6 @@
 .features {
   min-height: 900px;
-  margin-top: -330px;
+  margin-top: -285px;
   .tablet(@rules: {
     min-height: 800px;
     margin-top: -100px;
@@ -70,8 +70,8 @@ linear-gradient(144.66deg, #F3F8FF 8.57%, rgba(255, 255, 255, 0.5) 114.31%),
 }
 
 .features__header {
-  margin-left: 30px;
-  margin-bottom: 150px;
+  margin-left: 40px;
+  margin-bottom: 145px;
   .tablet(@rules: {
     padding-top: 35px;
     margin-left: 15px;
@@ -127,7 +127,7 @@ linear-gradient(144.66deg, #F3F8FF 8.57%, rgba(255, 255, 255, 0.5) 114.31%),
   font-size: 20px;
   color: @black;
   margin-right: 160px;
-  margin-bottom: 94px;
+  margin-bottom: 90px;
   .tablet(@rules: {
     line-height: 20px;
     font-size: 16px;
@@ -143,10 +143,10 @@ linear-gradient(144.66deg, #F3F8FF 8.57%, rgba(255, 255, 255, 0.5) 114.31%),
 
 
   &:nth-child(1) {
-    margin-left: 50px;
-    margin-right: 197px;
+    margin-left: 70px;
+    margin-right: 170px;
     .features__text {
-      max-width: 190px;
+      max-width: 160px;
     }
     .features__icon-container {
       padding-left: 6px;
@@ -182,9 +182,10 @@ linear-gradient(144.66deg, #F3F8FF 8.57%, rgba(255, 255, 255, 0.5) 114.31%),
 
   }
   &:nth-child(2) {
-    margin-right: 170px;
+    margin-right: 110px;
+    max-width: 320px;
     .features__text {
-      max-width: 220px;
+      max-width: 320px;
     }
     .features__icon {
     width: 116px;
@@ -239,9 +240,14 @@ linear-gradient(144.66deg, #F3F8FF 8.57%, rgba(255, 255, 255, 0.5) 114.31%),
   }
   &:nth-child(4) {
     margin-left: 0;
+    margin-right: 130px;
     .features__icon {
-    width: 112px;
-    height: 112px;
+    width: 102px;
+    height: 121px;
+  }
+
+  .features__icon-container {
+    margin-bottom: 10px;
   }
     .tablet(@rules: {
       margin-left: 0;
@@ -268,13 +274,16 @@ linear-gradient(144.66deg, #F3F8FF 8.57%, rgba(255, 255, 255, 0.5) 114.31%),
   &:nth-child(5) {
     margin-left: 0;
     margin-top: -10px;
-    margin-right: 150px;
+    margin-right: 148px;
     .features__icon {
     width: 122px;
     height: 129px;
   }
+  .features__icon-container {
+    margin-bottom: 20px;
+  }
     .features__text {
-      max-width: 190px;
+      max-width: 250px;
     }
     .tablet(@rules: {
       margin-left: 0;
@@ -303,9 +312,16 @@ linear-gradient(144.66deg, #F3F8FF 8.57%, rgba(255, 255, 255, 0.5) 114.31%),
   &:nth-child(6) {
     margin-left: 0;
     margin-right: 0px;
+
+    .features__icon-container {
+      margin-bottom: 12px;
+    }
     .features__icon {
     width: 112px;
     height: 110px;
+  }
+  .features__text {
+    max-width: 250px;
   }
     .tablet(@rules: {
       margin-left: 0;
