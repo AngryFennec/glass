@@ -1,0 +1,32 @@
+.button {
+  font-family: @main-font-semi;
+  width: 207px;
+  font-weight: 400;
+  text-align: center;
+  padding: 7px 24px;
+  font-size: 18px;
+  line-height: 31px;
+  color: @white;
+  border: none;
+  background-color: @blue;
+
+  .tablet(@rules: {
+    font-size: 15px;
+    line-height: 26px;
+    height: 36px;
+    padding-top: 6px;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 6px;
+
+    });
+
+  .mobile(@rules: {
+    width: 172px;
+    height: 35px;
+    line-height: 26px;
+    font-size: 15px;
+    padding: 4px 0;
+  });
+
+}
