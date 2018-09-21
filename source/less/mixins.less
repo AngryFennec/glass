@@ -52,7 +52,7 @@
 }
 
 .desktop (@rules) {
-		@media (min-width: 1920px) and (max-width: 1920px) {
+		@media (min-width: 1920px) {
 			@rules();
 		}
 }
@@ -64,13 +64,13 @@
 }
 
 .laptop (@rules) {
-		@media (min-width: 1200px) {
+		@media (min-width: 1200px) and (max-width: 1919px) {
 			@rules();
 		}
 }
 
 .tablet (@rules) {
-		@media (min-width: 768px) and (max-width: 1919px) {
+		@media (min-width: 768px) and (max-width: 1199px) {
 			@rules();
 		}
 }
