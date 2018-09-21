@@ -1,5 +1,5 @@
 .work {
-  min-height: 1010px;
+  min-height: 995px;
   .tablet(@rules: {
 margin-top: -90px;
     min-height: 995px;
@@ -11,7 +11,7 @@ margin-top: -90px;
   });
 
 .aside {
-  padding-top: 345px;
+  padding-top: 325px;
 }
 }
 
@@ -19,15 +19,23 @@ margin-top: -90px;
   margin-top: 68px;
   margin-bottom: 60px;
   margin: 0 auto;
-  min-height: 1010px;
+  min-height: 995px;
   width: 1920px;
   .flex-block();
   background:
   url("../images/work-desk.png") no-repeat 845px 310px,
-  url("../images/work-back-desk.svg") 5px -65px no-repeat;
+  url("../images/work-back-desk.svg") -10px -75px no-repeat;
 
 
   z-index: 5;
+
+  .laptop(@rules: {
+    width: 1200px;
+    background:
+    url("../images/work-desk.png") no-repeat 545px 310px,
+    url("../images/work-back-desk.svg") -320px -75px no-repeat;
+
+  });
 
   .tablet(@rules: {
     width: 768px;
@@ -49,7 +57,13 @@ margin-top: -90px;
 
 .work__content {
   width: 1270px;
-  padding-top: 60px;
+  padding-top: 50px;
+
+  .laptop(@rules: {
+    width: 1200px;
+
+  });
+
   .tablet(@rules: {
     width: 768px;
     padding-top: 35px;
