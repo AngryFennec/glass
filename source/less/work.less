@@ -1,8 +1,8 @@
 .work {
-  min-height: 995px;
+  min-height: 1005px;
   .tablet(@rules: {
-margin-top: -90px;
-    min-height: 995px;
+
+    min-height: 990px;
 
   });
   .mobile(@rules: {
@@ -11,7 +11,7 @@ margin-top: -90px;
   });
 
 .aside {
-  padding-top: 325px;
+  padding-top: 335px;
 }
 }
 
@@ -24,7 +24,7 @@ margin-top: -90px;
   .flex-block();
   background:
   url("../images/work-desk.png") no-repeat 845px 310px,
-  url("../images/work-back-desk.svg") -10px -75px no-repeat;
+  url("../images/work-back-desk.svg") 0px -72px no-repeat;
 
 
   z-index: 5;
@@ -32,8 +32,9 @@ margin-top: -90px;
   .laptop(@rules: {
     width: 1200px;
     background:
-    url("../images/work-desk.png") no-repeat 545px 310px,
-    url("../images/work-back-desk.svg") -320px -75px no-repeat;
+    url("../images/work-desk.png") no-repeat 595px 310px,
+    url("../images/border-mini.svg") 180px 250px no-repeat,
+    url("../images/work-back-laptop.svg") -320px -75px no-repeat;
 
   });
 
@@ -57,10 +58,10 @@ margin-top: -90px;
 
 .work__content {
   width: 1270px;
-  padding-top: 50px;
+  padding-top: 60px;
 
   .laptop(@rules: {
-    width: 1200px;
+    width: 1000px;
 
   });
 
@@ -101,7 +102,12 @@ margin-top: -90px;
   .flex-block();
   margin-left: 37px;
   margin-bottom: 27px;
-
+  .laptop(@rules: {
+    flex-wrap: wrap;
+    width: 1000px;
+    margin-left: 29px;
+    margin-bottom: 15px;
+  });
   .tablet(@rules: {
     flex-wrap: wrap;
     width: 600px;
@@ -144,6 +150,11 @@ margin-top: -90px;
   &:last-child {
     margin-left: 0;
   }
+
+  .laptop(@rules: {
+    margin-bottom: 15px;
+    white-space: pre-wrap;
+  });
 
   .tablet(@rules: {
     margin-right: 55px;
