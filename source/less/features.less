@@ -1,9 +1,9 @@
 .features {
-  min-height: 1100px;
-  margin-top: -285px;
+  min-height: 860px;
+  margin-top: -210px;
   .tablet(@rules: {
     min-height: 800px;
-    margin-top: -100px;
+    margin-top: -210px;
   });
   .mobile(@rules: {
     margin-top: -75px;
@@ -14,15 +14,23 @@
 
 
 .features__inner {
-  padding-top: 280px;
+  padding-top: 210px;
   margin: 0 auto;
-  min-height: 1100px;
+  min-height: 860px;
   width: 1920px;
     .flex-block();
-  background: url("../images/features.svg") 10px 120px no-repeat,
-  linear-gradient(144.66deg, #F3F8FF 8.57%, rgba(255, 255, 255, 0.5) 114.31%),
+  background: url("../images/features.svg") 10px 50px no-repeat,
+  linear-gradient(143.64deg, #F3F8FF 8.57%, rgba(255, 255, 255, 0.5) 114.31%),
   url("../images/features-desk.png") 270px 270px no-repeat;
 
+
+    .laptop(@rules: {
+      width: 1200px;
+      background: url("../images/features_tabletka.svg") 0px -518px no-repeat,
+      linear-gradient(144.66deg, #F3F8FF 8.57%, rgba(255, 255, 255, 0.5) 114.31%),
+      url("../images/features-desk.png") -200px 210px no-repeat;
+
+    });
   .tablet(@rules: {
     width: 768px;
     padding-top: 0;
@@ -54,8 +62,12 @@
 
 .features__content {
   width: 1270px;
+  min-height: 860px;
   .tablet(@rules: {
     width: 768px;
+  });
+  .laptop(@rules: {
+    width: 1200px;
   });
 
   .mobile(@rules: {

@@ -7,6 +7,11 @@
   .flex-direction(@direction: column);
   padding-top: 27px;
 
+  .laptop(@rules: {
+    width: 1200px;
+  });
+
+
   .tablet(@rules: {
     width: 768px;
     border: none;
@@ -115,6 +120,7 @@
     margin-left: 20px;
   });
   .mobile(@rules: {
+    margin-bottom: 20px;
     margin-left: 24px;
   });
 }
