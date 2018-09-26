@@ -1,6 +1,7 @@
 .features {
   min-height: 860px;
-  margin-top: -210px;
+  margin-top: -110px;
+  background: linear-gradient(143.64deg, #F3F8FF 8.57%, rgba(255, 255, 255, 0.5) 114.31%);
   .tablet(@rules: {
     min-height: 800px;
     margin-top: -210px;
@@ -9,24 +10,32 @@
     margin-top: -75px;
     min-height: 650px;
   });
+  .laptop(@rules: {
+    margin-top: 0;
+     .aside {
+       width: 220px;
+       padding-top: 260px;
+       padding-left: 50px;
+     }
+  });
 
 }
 
 
 .features__inner {
-  padding-top: 210px;
+  padding-top: 100px;
   margin: 0 auto;
   min-height: 860px;
   width: 1920px;
     .flex-block();
-  background: url("../images/features.svg") 10px 50px no-repeat,
+  background: url("../images/features.svg") 10px -50px no-repeat,
   linear-gradient(143.64deg, #F3F8FF 8.57%, rgba(255, 255, 255, 0.5) 114.31%),
-  url("../images/features-desk.png") 270px 270px no-repeat;
+  url("../images/features-desk.png") 270px 100px no-repeat;
 
 
     .laptop(@rules: {
       width: 1200px;
-      background: url("../images/features_tabletka.svg") 0px -518px no-repeat,
+      background: url("../images/features_tabletka.svg") 0px -718px no-repeat,
       linear-gradient(144.66deg, #F3F8FF 8.57%, rgba(255, 255, 255, 0.5) 114.31%),
       url("../images/features-desk.png") -200px 210px no-repeat;
 
@@ -66,7 +75,7 @@
     width: 768px;
   });
   .laptop(@rules: {
-    width: 1200px;
+    width: 1000px;
   });
 
   .mobile(@rules: {
@@ -78,6 +87,9 @@
 .features__header {
   margin-left: 40px;
   margin-bottom: 145px;
+  .laptop(@rules: {
+    margin-left: 0;
+  });
   .tablet(@rules: {
     padding-top: 35px;
     margin-left: 15px;
@@ -161,6 +173,10 @@
     width: 82px;
     height: 108px;
   }
+  .laptop(@rules: {
+    margin-right: 90px;
+    margin-left: 0;
+  });
 
     .tablet(@rules: {
       margin-left: 15px;
@@ -197,6 +213,9 @@
     width: 116px;
     height: 107px;
   }
+  .laptop(@rules: {
+    margin-right: 75px;
+  });
 
     .tablet(@rules: {
       margin-left: 0;
@@ -255,6 +274,10 @@
   .features__icon-container {
     margin-bottom: 10px;
   }
+  .laptop(@rules: {
+    margin-left: -55px;
+    margin-right: 53px;
+  });
     .tablet(@rules: {
       margin-left: 0;
       margin-right: 70px;
@@ -291,6 +314,9 @@
     .features__text {
       max-width: 250px;
     }
+    .laptop(@rules: {
+      margin-right: 80px;
+    });
     .tablet(@rules: {
       margin-left: 0;
       margin-right: 95px;
