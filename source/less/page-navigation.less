@@ -4,7 +4,8 @@
   background: white;
   left: 0;
   top: 0;
-  z-index: 100;
+  z-index: 9;
+  min-height: 60px;
 }
 .page-navigation {
   position: relative;
@@ -82,13 +83,18 @@
 .header__logo {
   padding-left: 70px;
 }
+
+.page-header {
+  min-height: 80px;
+}
 }
 
 @media (min-width: 1200px) {
 .page-header__wrapper {
   margin: 0 auto;
   width: 1200px;
-  background:  white;
+  background:
+  white;
 }
 
 .page-navigation {
@@ -96,7 +102,7 @@
 }
 .nav-container {
   position: absolute;
-  left: -130px;
+  left: -50px;
   box-shadow: none;
   width: 500px;
   margin-left: 0;
@@ -105,11 +111,15 @@
 
 .header {
   width: 300px;
-  padding-top: 25px;
+  padding-top: 15px;
     z-index: 150;
 }
 .header__logo {
-  padding-left: 30px;
+  padding-left: 0px;
+}
+
+.page-header {
+  min-height: 68px;
 }
 }
 
@@ -131,7 +141,7 @@
 
   .header {
     width: 300px;
-    padding-top: 40px;
+    padding-top: 20px;
   }
   .header__logo {
     padding-top: 0;
@@ -139,10 +149,12 @@
   }
   .page-header__wrapper {
 width: 1920px;
-padding-top: 10px;
-
     margin-bottom: -30px;
-    background: url("../images/head-back-desk.svg") -1px 0 no-repeat,
+    background: url("../images/head-back-desk.svg") -1px -1px no-repeat,
   white;
+  }
+
+  .page-header {
+    min-height: 79px;
   }
 }
