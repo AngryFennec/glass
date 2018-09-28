@@ -155,11 +155,16 @@
         over.forEach(function (item) {item.classList.add("overlay--close");});
 
         burger.addEventListener ("click", function (evt) {
-        evt.preventDefault();
-        menu.classList.toggle("nav-container--close");
-        over.forEach(function (item) {item.classList.toggle("overlay--close");});
-        burger.classList.toggle("menu-button--close");
+          evt.preventDefault();
+          menu.classList.toggle("nav-container--close");
+          over.forEach(function (item) {item.classList.toggle("overlay--close");});
+          burger.classList.toggle("menu-button--close");
        });
+       menu.addEventListener ("click", function (evt) {
+         menu.classList.toggle("nav-container--close");
+         over.forEach(function (item) {item.classList.toggle("overlay--close");});
+         burger.classList.toggle("menu-button--close");
+      });
 
     var examplesButton = document.querySelector(".examples__button");
     var examplesBox = document.querySelector(".examples__box--2");
