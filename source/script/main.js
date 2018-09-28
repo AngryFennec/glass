@@ -167,7 +167,7 @@
       examplesBox.classList.toggle("open");
       examplesButton.classList.toggle("open-btn");
     });
-/*
+
     var imagesArray = [
       "./images/work-desktop.png",
       "./images/work-desktop-offroad.png",
@@ -181,12 +181,12 @@
           "./images/work-mobile-offroad.png",
           "./images/work-mobile-prem.png"];
           var pricesArray = [
-            '40 800', '40 800', '37 600', '31 200', '37 600', '48 800'
+            '40 800', '37 600', '48 800'
           ];
 
         var tabs = document.querySelector('.tabs__item');
     var workButtons = Array.prototype.slice.call(tabs.querySelectorAll(".work__options-item"));
-    var workWrapper = document.querySelector(".work__wrapper");
+    var workWrapper = document.querySelector(".work__inner");
     var priceValue = document.querySelector('.tabs__inner-price-value');
     function setDesktopBackground(workButton, index) {
       return function (evt) {
@@ -198,7 +198,7 @@
         workButtons.forEach(item => {
           item.classList.remove('work__options-item--active');
         });
-        workWrapper.style.background = 'url(' + imagesArray[index] + ') 830px 280px no-repeat,' + ' url("./images/klass_avto.svg") 0px -247px no-repeat';
+        workWrapper.style.background = 'url(' + imagesArray[index] + ') 845px 310px no-repeat,' + '  url("../images/work-back-desk.svg") 0px -72px no-repeat';
         workButton.classList.add('work__options-item--active');
         priceValue.textContent = pricesArray[index];
       };
@@ -212,14 +212,11 @@
         workButtons.forEach(item => {
           item.classList.remove('work__options-item--active');
         });
-        var position = '610px 310px';
-        if (index === 0 || index === 4) {
-          position = '660px 370px';
-        }
-        if (index === 3 || index === 5) {
+        var position = '595px 310px';
+        if (index === 2) {
           position = '650px 370px';
         }
-        workWrapper.style.background = 'url(' + imagesArray[index] + ')' + position + ' no-repeat,' + ' url("./images/border-mini.svg") 200px 305px no-repeat, url("./images/klass_avto-1200.svg") -359px -237px no-repeat';
+        workWrapper.style.background = 'url(' + imagesArray[index] + ')' + position + ' no-repeat,' + ' url("../images/border-mini.svg") 180px 250px no-repeat, url("../images/work-back-laptop.svg") -320px -75px no-repeat';
           workButton.classList.add('work__options-item--active');
           priceValue.textContent = pricesArray[index];
           };
@@ -235,10 +232,13 @@
           item.classList.remove('work__options-item--active');
         });
         var position = '170px 480px';
-        if (index !== 2) {
+        if (index === 2) {
           position = '240px 480px';
         }
-            workWrapper.style.background = 'url(' + imagesTabletArray[index] + ') no-repeat ' + position +',' + ' url("./images/klass_avto_tabletka.svg") -3px -115px no-repeat';
+        if (index === 1) {
+          position = '240px 480px';
+        }
+            workWrapper.style.background = 'url(' + imagesTabletArray[index] + ') no-repeat ' + position +',' + ' url("../images/klass_avto_tabletka.svg") 0px -137px no-repeat';
             workButton.classList.add('work__options-item--active');
             priceValue.textContent = pricesArray[index];
           };
@@ -252,7 +252,7 @@
         workButtons.forEach(item => {
           item.classList.remove('work__options-item--active');
         });
-            workWrapper.style.background = 'url("./images/features-work-mobile-pseudo1.png") -57px -2px no-repeat, url(' + imagesMobileArray[index] + ') 0px 40px no-repeat';
+            workWrapper.style.background = 'url("../images/work-back-mobile.svg") 0px 10px no-repeat, url(' + imagesMobileArray[index] + ') 0px 210px no-repeat';
             workButton.classList.add('work__options-item--active');
             priceValue.textContent = pricesArray[index];
           };
@@ -260,36 +260,36 @@
     function onStartCallbacks() {
       priceValue.textContent = pricesArray[findIndex()];
       if (document.body.clientWidth >= 1920) {
-        workWrapper.style.background = 'url(' + imagesArray[findIndex()] + ') 830px 280px no-repeat,' + ' url("./images/klass_avto.svg") 0px -247px no-repeat';
+        workWrapper.style.background = 'url(' + imagesArray[findIndex()] + ') 845px 310px no-repeat,' + '  url("../images/work-back-desk.svg") 0px -72px no-repeat';
         workButtons.forEach((item, i) => {
           item.addEventListener("click", setDesktopBackground(item, i));
         });
       }
       else if (document.body.clientWidth < 1920 && document.body.clientWidth >= 1200) {
-        var position = '610px 310px';
-        if (findIndex() === 0 || findIndex() === 4) {
-          position = '660px 370px';
-        }
-        if (findIndex() === 3 || findIndex() === 5) {
+        var position = '595px 310px';
+        if (findIndex() === 2) {
           position = '650px 370px';
         }
-        workWrapper.style.background = 'url(' + imagesArray[findIndex()] + ')' + position + ' no-repeat,' + ' url("./images/border-mini.svg") 200px 305px no-repeat, url("./images/klass_avto-1200.svg") -359px -237px no-repeat';
+        workWrapper.style.background = 'url(' + imagesArray[findIndex()] + ')' + position + ' no-repeat,' + ' url("../images/border-mini.svg") 180px 250px no-repeat, url("../images/work-back-laptop.svg") -320px -75px no-repeat';
         workButtons.forEach((item, i) => {
           item.addEventListener("click", setLaptopBackground(item, i));
         });
       }
       else if (document.body.clientWidth < 1200 && document.body.clientWidth >= 768) {
         var position = '170px 480px';
-        if (index !== 2) {
+        if (findIndex() === 2) {
           position = '240px 480px';
         }
-        workWrapper.style.background = 'url(' + imagesTabletArray[findIndex()] + ') no-repeat ' + position +',' + ' url("./images/klass_avto_tabletka.svg") -3px -115px no-repeat';
+        if (findIndex() === 1) {
+          position = '240px 480px';
+        }
+        workWrapper.style.background = 'url(' + imagesTabletArray[findIndex()] + ') no-repeat ' + position +',' + ' url("../images/klass_avto_tabletka.svg") 0px -137px no-repeat';
         workButtons.forEach((item, i) => {
           item.addEventListener("click", setTabletBackground(item, i));
         });
       }
       else {
-        workWrapper.style.background = 'url("./images/features-work-mobile-pseudo1.png") -57px -2px no-repeat, url(' + imagesMobileArray[findIndex()] + ') 0px 40px no-repeat';
+        workWrapper.style.background = 'url("../images/work-back-mobile.svg") 0px 10px no-repeat, url(' + imagesMobileArray[findIndex()] + ') 0px 210px no-repeat';
         workButtons.forEach((item, i) => {
           item.addEventListener("click", setMobileBackground(item, i));
         });
@@ -309,5 +309,5 @@
       return ind;
     }
 
-    onStartCallbacks();*/
+    onStartCallbacks();
 })();
