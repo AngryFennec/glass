@@ -23,7 +23,6 @@
   width: 1920px;
   .flex-block();
   background:
-  url("../images/work-desk.png") no-repeat 845px 310px,
   url("../images/work-back-desk.svg") 0px -72px no-repeat;
 
 
@@ -31,10 +30,10 @@
 
   .laptop(@rules: {
     width: 1200px;
+    min-height: 1005px;
     background:
-    url("../images/work-desk.png") no-repeat 595px 310px,
     url("../images/border-mini.svg") 180px 250px no-repeat,
-    url("../images/work-back-laptop.svg") -320px -75px no-repeat;
+    url("../images/work-back-laptop.svg") -325px -75px no-repeat;
 
   });
 
@@ -42,7 +41,7 @@
     width: 768px;
     margin-bottom: 0;
     margin-top: -5px;
-    background: url("../images/work-tablet.png") no-repeat 120px 545px,
+    background:
     url("../images/klass_avto_tabletka.svg") 0px -137px no-repeat;
   });
 
@@ -52,8 +51,7 @@
     margin-top: 0;
     min-height: 550px;
     background: url("../images/work-back-mobile.svg") 0px 10px no-repeat,
-    url("../images/work-mobile.jpg") 0px 210px no-repeat;
-  });
+    });
 }
 
 .work__content {
@@ -223,6 +221,7 @@ max-width: 100px;
 .addon__list {
   margin-top: 5px;
   padding-top: 0;
+  z-index: 10;
   .work__options-item {
     margin-right: 50px;
     .tablet(@rules: {

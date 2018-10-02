@@ -19,6 +19,24 @@ min-height: 1100px;
         z-index: 6;
   });
 }
+.head__img {
+  position: absolute;
+  top: 40px;
+  right: -200px;
+  .laptop(@rules: {
+    top: 70px;
+    right: -480px;
+  });
+  .tablet(@rules: {
+    top: 220px;
+    right: 0;
+  });
+
+  .mobile(@rules: {
+    top: 200px;
+    right: 45px;
+  });
+}
 
 .head__back {
   z-index: 8;
@@ -26,7 +44,7 @@ min-height: 1100px;
   position: relative;
   width: 1920px;
   margin: 0 auto;
-  background: url("../images/head-desk.png") 670px 320px no-repeat,
+  background:
   url("../images/head-back-desk.svg") 0px -25px no-repeat;
 
 
@@ -34,7 +52,7 @@ min-height: 1100px;
     width: 768px;
     margin: 0 auto;
     background:
-    url("../images/head-desk.png") 80px 430px no-repeat,
+
     url("../images/kheder-tabletka.svg") 0px 52px no-repeat;
   });
   .mobile(@rules: {
@@ -47,7 +65,7 @@ background: none;
     width: 1200px;
     min-height: 900px;
     background:
-    url("../images/head-desk.png") 255px 370px no-repeat,
+
     url("../images/kheder-tabletka.svg") 430px 52px no-repeat;
   });
 
@@ -140,7 +158,7 @@ background: none;
     margin-top: 0;
     .flex-block();
     .flex-direction(column);
-    background: url("../images/head-mobile.png") 70px 170px no-repeat,
+    background:
     url("../images/head-back-mobile.svg") 0px 145px no-repeat;
   });
 
@@ -161,6 +179,7 @@ background: none;
   line-height: 35px;
   font-size: 20px;
   color: #000000;
+  position: relative;
   .laptop(@rules: {
     width: 1200px;
     min-height: 770px;
@@ -250,7 +269,7 @@ background: none;
       margin-bottom: 20px;
       width: 350px;
     });
-    margin-bottom: 25px;
+    margin-bottom: 20px;
     padding-left: 20px;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -262,7 +281,7 @@ background: none;
 }
 
 .head__button {
-  margin-top: -10px;
+  margin-top: 0px;
   margin-left: 0px;
   .tablet(@rules: {
     margin-top: 0;
