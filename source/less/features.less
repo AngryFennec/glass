@@ -1,10 +1,11 @@
 .features {
   min-height: 860px;
   margin-top: -110px;
+  width: 100%;
   background: linear-gradient(143.64deg, #F3F8FF 8.57%, rgba(255, 255, 255, 0.5) 114.31%);
   .tablet(@rules: {
     min-height: 700px;
-    margin-top: -210px;
+    margin-top: -220px;
   });
   .mobile(@rules: {
     margin-top: -75px;
@@ -28,7 +29,7 @@
   min-height: 860px;
   width: 1920px;
     .flex-block();
-  background: url("../images/features.svg") 10px -50px no-repeat,
+  background: url("../images/features.svg") 20px -60px no-repeat,
   linear-gradient(143.64deg, #F3F8FF 8.57%, rgba(255, 255, 255, 0.5) 114.31%),
   url("../images/features-desk.png") 270px 100px no-repeat;
 
@@ -37,7 +38,7 @@
       width: 1200px;
       background: url("../images/features_tabletka.svg") 0px -718px no-repeat,
       linear-gradient(144.66deg, #F3F8FF 8.57%, rgba(255, 255, 255, 0.5) 114.31%),
-      url("../images/features-desk.png") -200px 210px no-repeat;
+      url("../images/features-desk.png") -200px 150px no-repeat;
 
     });
   .tablet(@rules: {
@@ -45,8 +46,9 @@
     padding-top: 0;
     margin-bottom: 0;
     margin-top: 0;
+    min-height: 800px;
     padding-bottom: 0px;
-      background: url("../images/features_tabletka.svg") 0px -118px no-repeat,
+      background: url("../images/features_tabletka.svg") 0px -110px no-repeat,
       linear-gradient(144.66deg, #F3F8FF 8.57%, rgba(255, 255, 255, 0.5) 114.31%),
       url("../images/features-mobile.png") 000px 110px no-repeat;
   });
@@ -73,10 +75,12 @@
   width: 1270px;
   min-height: 860px;
   .tablet(@rules: {
+    min-height: 800px;
     width: 768px;
   });
   .laptop(@rules: {
     width: 1000px;
+
   });
 
   .mobile(@rules: {
