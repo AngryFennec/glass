@@ -3,7 +3,7 @@
   margin-top: -110px;
   background: linear-gradient(143.64deg, #F3F8FF 8.57%, rgba(255, 255, 255, 0.5) 114.31%);
   .tablet(@rules: {
-    min-height: 800px;
+    min-height: 700px;
     margin-top: -210px;
   });
   .mobile(@rules: {
@@ -45,7 +45,7 @@
     padding-top: 0;
     margin-bottom: 0;
     margin-top: 0;
-    padding-bottom: 70px;
+    padding-bottom: 0px;
       background: url("../images/features_tabletka.svg") 0px -118px no-repeat,
       linear-gradient(144.66deg, #F3F8FF 8.57%, rgba(255, 255, 255, 0.5) 114.31%),
       url("../images/features-mobile.png") 000px 110px no-repeat;
@@ -57,6 +57,7 @@
     margin-top: 0;
     padding-top: 0;
     padding-bottom: 10px;
+    min-height: 800px;
     background: linear-gradient(144.66deg, #F3F8FF 8.57%, rgba(255, 255, 255, 0.5) 114.31%),
        url("../images/features-tablet.png") 0px 140px no-repeat;
   });
@@ -81,6 +82,7 @@
   .mobile(@rules: {
     width: 320px;
     padding-top: 0;
+    min-height: 750px;
   });
 }
 
